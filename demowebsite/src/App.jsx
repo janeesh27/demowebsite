@@ -1,15 +1,20 @@
 import React from 'react'
-import Header from './components/Header/Header'
-import About from './components/About/About'
-import Footer from './components/Footer/Footer'
+import Navbar from './components/Navbar/Navbar'
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
 
 const App = () => {
     return (
+
         <>
-            <Header />
-            <About />
-            <Footer />
+
+            <Routes>
+                <Route path='/' element={<Navbar />} />
+            </Routes>
+
         </>
+
+
     )
 }
 
