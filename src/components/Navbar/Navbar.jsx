@@ -19,8 +19,8 @@ function Navbar() {
 
                 <div className={showMediaIcons ? 'menu-bar mobile-menu-bar' : 'menu-bar'}>
                     <ul>
-                        <li><a href='#'>Home</a></li>
-                        <li><a href='#'>About</a></li>
+                        <li><a href='/'>Home</a></li>
+                        <li><a href='/About.jsx'>About</a></li>
 
 
                     </ul>
@@ -35,18 +35,16 @@ function Navbar() {
                         </ul>
 
                     </div>
-
-
-                </div>
-                <div className="hamburger-menu">
-                    <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-                        <GiHamburgerMenu />
-                    </a>
+                    <div className="hamburger-menu">
+                        <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+                            <GiHamburgerMenu />
+                        </a>
+                    </div>
                 </div>
 
             </nav>
-        
-            
+
+
         </>
     )
 }
