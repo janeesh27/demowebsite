@@ -2,7 +2,6 @@
 
     width: 100%;
     height: 4rem;
-
     display: grid;
     grid-auto-rows: 4rem;
     grid-template-columns: 10rem 1fr 2fr 1fr 5rem;
