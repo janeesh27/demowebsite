@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 // import { Link } from 'react-router-dom'
 import { FaFacebookSquare, FaInstagramSquare, FaLinkedinIn } from 'react-icons/fa'
+import { GiHamburgerMenu } from 'react-icons/gi'
 import './Navbar.css'
 function Navbar() {
+    const [showMediaIcons, setShowMediaIcons] = useState(false);
     return (
         <>
             <nav className='main-nav'>
@@ -15,12 +17,12 @@ function Navbar() {
                     </h2>
                 </div>
 
-                <div className='menu-bar'>
+                <div className={showMediaIcons ? 'menu-bar mobile-menu-bar' : 'menu-bar'}>
                     <ul>
                         <li><a href='#'>Home</a></li>
                         <li><a href='#'>About</a></li>
-                        
-                        
+
+
                     </ul>
                 </div>
 
@@ -31,11 +33,20 @@ function Navbar() {
                             <li><a href='https://www.instagram.com/theindegenous/' target='_indegenous'><FaInstagramSquare /></a></li>
                             <li><a href='https://www.facebook.com/theindegenous' target='_indegenous'><FaFacebookSquare /></a></li>
                         </ul>
+
                     </div>
 
 
                 </div>
+                <div className="hamburger-menu">
+                    <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+                        <GiHamburgerMenu />
+                    </a>
+                </div>
+
             </nav>
+        
+            
         </>
     )
 }
