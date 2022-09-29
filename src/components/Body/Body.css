@@ -29,3 +29,27 @@ height: 40rem;
     font-weight: 500;
     
 }
+
+/* #################MOBILE############################# */
+@media(max-width:1080){
+
+.main-body{
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto auto;
+}
+
+}
+
+
+/* ############################### */
+
+@media (max-width: 520px) {
+    .main-body{
+width: 100%;
+grid-template-columns: auto;
+    }
+
+    
+}
+    
