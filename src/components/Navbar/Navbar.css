@@ -54,8 +54,8 @@
     display: block;
     position: relative;
     z-index: 1;
-    padding: 2em;
-    margin: -2em;
+    padding: 1em 1em .5em 1em;
+    margin: -1em;
 }
 
 /* ######################## */
