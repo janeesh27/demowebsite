@@ -26,6 +26,7 @@ const Body = () => {
           understanding and awareness of Indigenous peoples, their history, and
           their cultures.
         </p>
+        <button className="button1">Join Us</button>
       </div>
     </div>
   );
