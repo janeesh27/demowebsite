@@ -1,24 +1,77 @@
-.main-footer{
+.main-footer {
+  width: 100%;
+  height: 8rem;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.copyright h3 {
+  padding: 1rem 14rem 0.2rem 6rem;
+  text-shadow: 2px 2px 5px silver;
+}
+.copyright p {
+  padding: 0.2rem 14rem 2rem 6rem;
+  font-size: 10px;
+}
+.contacts h3 {
+  padding: 1rem;
+  text-shadow: 2px 2px 5px silver;
+}
+.contacts p {
+  padding: 0.5rem;
+  padding-left: 1rem;
+}
+
+/* #############################################mobilecompatible################## */
+
+@media (max-width: 1080px) {
+  .main-footer {
     width: 100%;
     height: 8rem;
-    background-color: white;
-    display: grid;
-    grid-template-columns: 50% 50% ;
+  }
+}
 
+/* ########################################## */
+
+@media (max-width: 998px) {
+  .main-footer {
+    display: grid;
+  }
 }
-.copyright h3{
-    padding: 1rem 14rem 0.2rem 6rem;
-    text-shadow: 2px 2px 5px silver
+
+/* ##################################### */
+
+@media (max-width: 798px) {
+  .main-footer {
+    display: grid;
+    height: fit-content;
+    grid-template-columns: auto;
+  }
+  .copyright h3 {
+    padding: 1rem 15rem 0.5rem 20rem;
+  }
+  .copyright p {
+    padding: 0.1rem 15rem 2rem 15rem;
+  }
+  .contacts {
+    padding: 0.2rem 15rem 1rem 15rem;
+  }
 }
-.copyright p{
-    padding: .2rem 14rem 2rem 6rem;
-    font-size: 10px;
+
+/* ####################################### */
+
+@media (max-width: 575px) {
+  .main-footer {
+    
+    display: grid;
+    grid-template-columns:auto;
+  }
+  .copyright {
+    text-align: justify;
+  }
+  .contacts {
+    text-align: center;
+    
+  }
 }
-.contacts h3{
-    padding:1rem ;
-    text-shadow: 2px 2px 5px silver
-    }
-    .contacts p{
-        padding: 0.5rem;
-        padding-left: 1rem;
-    }
+/* ########################################### */
