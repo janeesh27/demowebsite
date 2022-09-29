@@ -20,6 +20,7 @@
     padding: 10rem 5rem 0rem 5rem;
     font-size: 40px;
     text-shadow: 4px 4px 8px silver;
+    
 }
 
 .text p {
@@ -41,10 +42,29 @@
 
 }
 
+/* ################################################ */
 
-/* ############################### */
+@media (max-width:798px) {
+   .main-body{ 
+    grid-template-columns:auto auto;
 
-@media (max-width: 520px) {
+}
+.i1 img{
+    height: 30rem;
+}
+
+.text h3{
+    font-size: 20px;
+    padding: 3rem 1rem .5rem 2rem;
+}
+.text p{
+    font-size: 13px;
+    padding:.5rem 1rem 1rem 2rem ;
+}
+}
+/* ################################ */
+
+@media (max-width: 650px) {
     .main-body {
         width: 100%;
         grid-template-columns: auto;
@@ -59,20 +79,14 @@
     .text h3 {
         font-size: 30px;
         padding: 2rem 1rem .5rem 1rem;
+        text-align: center;
     }
 
     .text p {
-        padding: 0.5rem;
-        ;
+        padding: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
 
     }
 
-}
-
-/* ################################################ */
-
-@media (max-width:798px) {
-   .main-body{ 
-    grid-template-columns:auto auto;
-}
 }
