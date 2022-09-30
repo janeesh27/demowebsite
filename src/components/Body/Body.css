@@ -29,6 +29,8 @@
 }
 
 .button1 {
+    display: block;
+    margin: auto;
   width: 150px;
   height: 80px;
   background-color: bisque;

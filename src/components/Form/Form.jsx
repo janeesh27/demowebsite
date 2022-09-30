@@ -4,8 +4,8 @@ import "./Form.css";
 const Form = () => {
   return (
     <>
-      <div className="userform">
-        <form action="">
+      <div className="userform" id="form">
+        <form action="" >
           <div>
             <label htmlFor="username">Full Name</label>
             <input
