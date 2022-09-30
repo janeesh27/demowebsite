@@ -1,0 +1,27 @@
+.userform{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    height: 28rem;
+    padding-top: 1rem;
+    
+}
+
+.userform form{
+    grid-column: 2/3;
+    }
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+    background-color: silver;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
