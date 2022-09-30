@@ -5,7 +5,7 @@ const Body = () => {
   return (
     <div className="main-body">
       <div className="i1">
-        <img src={Image}></img>
+        <img src={Image} alt={'reload'}></img>
       </div>
 
       <div className="text">
